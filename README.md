@@ -6,3 +6,4 @@ NOTE: Self Learning Kotlin topics from different online sites/courses. If any of
 2. TipCalculator: (U) Calculator used to calculate the TIP amount
 3. EmojiDictonary: (U) List of emojis saved as dictonary.
 4. Mytask: (U) A TODO app which have feature to make your task IMPORTANT !
+5. HelloWorld: (U) Created an app which displays my name initially and using onClickListener gives the no of counts when the button is clicked.
