@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
         //Code refactoring by removing the Button and TextView references using ID
         var timeClicked = 0
         button.setOnClickListener {
-            timeClicked += timeClicked
+            timeClicked += 1
             textView.text = timeClicked.toString()
         }
 
