@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,13 +25,21 @@ class MainActivity : AppCompatActivity() {
 
          */
 
-        //Implement button onclicklistener android kotlin : To get the Count of button clicked instead of Name
+        /*//Implement button onclicklistener android kotlin : To get the Count of button clicked instead of Name
         val btn_click_me = findViewById(R.id.button) as Button
         val my_text_view = findViewById(R.id.textView) as TextView
         var timeClicked = 0
         btn_click_me.setOnClickListener {
             timeClicked = timeClicked + 1
             my_text_view.text = timeClicked.toString()
+        }*/
+
+        //Code refactoring by removing the Button and TextView references using ID
+        var timeClicked = 0
+        button.setOnClickListener {
+            timeClicked += timeClicked
+            textView.text = timeClicked.toString()
         }
+
     }
 }
